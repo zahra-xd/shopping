@@ -1,0 +1,1629 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>داشبورد ادمین</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../bootstrap-4.5.3-dist/bootstrap-4.5.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./fonts/Vazir-Medium.ttf">
+</head>
+
+<body>
+    <!-- //navbar -->
+    <nav class="sidbarr-panel" id="sli-pan">
+        <div class="logo-panel">
+            <a><img src="../image/logo (2).png"></a>
+            <a class="small_logo"><img src="../image/mini_logo.png"></a>
+
+            <div class="sidebar_close_icon d-lg-none" onclick="closeslide()">
+                <i style="font-size:14px" class="fa">&#xf00d;</i>
+            </div>
+
+        </div>
+        <ul class="metismenu" id="sidebar_menu">
+            <li class="mm-active">
+                <a class="">
+                    <div class="nav_icon_small">
+                        <img src="../image/dashboard.svg">
+                    </div>
+                    <div class="nav_title">
+                        <span>مدیریت کاربر </span>
+                        <i style="font-size:14px" class="fa icon-dashbor">&#xf105;</i>
+                    </div>
+                </a>
+                <ul class="mm-collapse">
+                    <li><a href="#">پیش فرض</a></li>
+                    <li><a href="#">اسلایدر تیره</a></li>
+                    <li><a href="#">اسلایدر روشن</a></li>
+                </ul>
+            </li>
+            <li class="mm-active">
+                <a class="">
+                    <div class="nav_icon_small">
+                        <img src="../image/2.svg">
+                    </div>
+                    <div class="nav_title">
+                        <span>اپلیکیشن</span>
+                        <i style="font-size:14px" class="fa icon-dashbor">&#xf105;</i>
+                    </div>
+                </a>
+                <ul class="mm-collapse">
+                    <li><a href="#">پیش فرض</a></li>
+                    <li><a href="#">اسلایدر تیره</a></li>
+                    <li><a href="#">اسلایدر روشن</a></li>
+                </ul>
+            </li>
+            <li class="mm-active">
+                <a class="">
+                    <div class="nav_icon_small">
+                        <img src="../image/3.svg">
+                    </div>
+                    <div class="nav_title">
+                        <span>نوار ها</span>
+                        <i style="font-size:14px" class="fa icon-dashbor">&#xf105;</i>
+                    </div>
+                </a>
+                <ul class="mm-collapse">
+                    <li><a href="#">پیش فرض</a></li>
+                    <li><a href="#">اسلایدر تیره</a></li>
+                    <li><a href="#">اسلایدر روشن</a></li>
+                </ul>
+            </li>
+            <li class="mm-active">
+                <a class="">
+                    <div class="nav_icon_small">
+                        <img src="../image/5.svg">
+                    </div>
+                    <div class="nav_title">
+                        <span>کاربران</span>
+                        <i style="font-size:14px" class="fa icon-dashbor">&#xf105;</i>
+                    </div>
+                </a>
+                <ul class="mm-collapse">
+                    <li><a href="#">پیش فرض</a></li>
+                    <li><a href="#">اسلایدر تیره</a></li>
+                    <li><a href="#">اسلایدر روشن</a></li>
+                </ul>
+            </li>
+            <li class="mm-active">
+                <a class="">
+                    <div class="nav_icon_small">
+                        <img src="../image/6.svg">
+                    </div>
+                    <div class="nav_title">
+                        <span>سازنده</span>
+                        <i style="font-size:14px" class="fa icon-dashbor">&#xf105;</i>
+                    </div>
+                </a>
+                <ul class="mm-collapse">
+                    <li><a href="#">پیش فرض</a></li>
+                    <li><a href="#">اسلایدر تیره</a></li>
+                    <li><a href="#">اسلایدر روشن</a></li>
+                </ul>
+            </li>
+            <li class="mm-active">
+                <a class="">
+                    <div class="nav_icon_small">
+                        <img src="../image/7.svg">
+                    </div>
+                    <div class="nav_title">
+                        <span>صورت حساب</span>
+                        <i style="font-size:14px" class="fa icon-dashbor">&#xf105;</i>
+                    </div>
+                </a>
+                <ul class="mm-collapse">
+                    <li><a href="#">پیش فرض</a></li>
+                    <li><a href="#">اسلایدر تیره</a></li>
+                    <li><a href="#">اسلایدر روشن</a></li>
+                </ul>
+            </li>
+            <li class="mm-active">
+                <a class="">
+                    <div class="nav_icon_small">
+                        <img src="../image/8.svg">
+                    </div>
+                    <div class="nav_title">
+                        <span>فرم</span>
+                        <i style="font-size:14px" class="fa icon-dashbor">&#xf105;</i>
+                    </div>
+                </a>
+                <ul class="mm-collapse">
+                    <li><a href="#">پیش فرض</a></li>
+                    <li><a href="#">اسلایدر تیره</a></li>
+                    <li><a href="#">اسلایدر روشن</a></li>
+                </ul>
+            </li>
+            <li class="mm-active">
+                <a class="">
+                    <div class="nav_icon_small">
+                        <img src="../image/9.svg">
+                    </div>
+                    <div class="nav_title">
+                        <span>بورد</span>
+                        <i style="font-size:14px" class="fa icon-dashbor">&#xf105;</i>
+                    </div>
+                </a>
+                <ul class="mm-collapse">
+                    <li><a href="#">پیش فرض</a></li>
+                    <li><a href="#">اسلایدر تیره</a></li>
+                    <li><a href="#">اسلایدر روشن</a></li>
+                </ul>
+            </li>
+            <li class="mm-active">
+                <a class="">
+                    <div class="nav_icon_small">
+                        <img src="../image/10.svg">
+                    </div>
+                    <div class="nav_title">
+                        <span>تقویم</span>
+                        <i style="font-size:14px" class="fa icon-dashbor">&#xf105;</i>
+                    </div>
+                </a>
+                <ul class="mm-collapse">
+                    <li><a href="#">پیش فرض</a></li>
+                    <li><a href="#">اسلایدر تیره</a></li>
+                    <li><a href="#">اسلایدر روشن</a></li>
+                </ul>
+            </li>
+            <li class="mm-active">
+                <a class="">
+                    <div class="nav_icon_small">
+                        <img src="../image/11.svg">
+                    </div>
+                    <div class="nav_title">
+                        <span>تم</span>
+                        <i style="font-size:14px" class="fa icon-dashbor">&#xf105;</i>
+                    </div>
+                </a>
+                <ul class="mm-collapse">
+                    <li><a href="#">پیش فرض</a></li>
+                    <li><a href="#">اسلایدر تیره</a></li>
+                    <li><a href="#">اسلایدر روشن</a></li>
+                </ul>
+            </li>
+            <li class="mm-active">
+                <a class="">
+                    <div class="nav_icon_small">
+                        <img src="../image/12.svg">
+                    </div>
+                    <div class="nav_title">
+                        <span>عمومی</span>
+                        <i style="font-size:14px" class="fa icon-dashbor">&#xf105;</i>
+                    </div>
+                </a>
+                <ul class="mm-collapse">
+                    <li><a href="#">پیش فرض</a></li>
+                    <li><a href="#">اسلایدر تیره</a></li>
+                    <li><a href="#">اسلایدر روشن</a></li>
+                </ul>
+            </li>
+            <li class="mm-active">
+                <a class="">
+                    <div class="nav_icon_small">
+                        <img src="../image/13.svg">
+                    </div>
+                    <div class="nav_title">
+                        <span>محصولات</span>
+                        <i style="font-size:14px" class="fa icon-dashbor">&#xf105;</i>
+                    </div>
+                </a>
+                <ul class="mm-collapse">
+                    <li><a href="#">پیش فرض</a></li>
+                    <li><a href="#">اسلایدر تیره</a></li>
+                    <li><a href="#">اسلایدر روشن</a></li>
+                </ul>
+            </li>
+            <li class="mm-active">
+                <a class="">
+                    <div class="nav_icon_small">
+                        <img src="../image/14.svg">
+                    </div>
+                    <div class="nav_title">
+                        <span>ایکن</span>
+                        <i style="font-size:14px" class="fa icon-dashbor">&#xf105;</i>
+                    </div>
+                </a>
+                <ul class="mm-collapse">
+                    <li><a href="#">پیش فرض</a></li>
+                    <li><a href="#">اسلایدر تیره</a></li>
+                    <li><a href="#">اسلایدر روشن</a></li>
+                </ul>
+            </li>
+            <li class="mm-active">
+                <a class="">
+                    <div class="nav_icon_small">
+                        <img src="../image/15.svg">
+                    </div>
+                    <div class="nav_title">
+                        <span>انیمیشن</span>
+                        <i style="font-size:14px" class="fa icon-dashbor">&#xf105;</i>
+                    </div>
+                </a>
+                <ul class="mm-collapse">
+                    <li><a href="#">پیش فرض</a></li>
+                    <li><a href="#">اسلایدر تیره</a></li>
+                    <li><a href="#">اسلایدر روشن</a></li>
+                </ul>
+            </li>
+            <li class="mm-active">
+                <a class="">
+                    <div class="nav_icon_small">
+                        <img src="../image/16.svg">
+                    </div>
+                    <div class="nav_title">
+                        <span>اجزا</span>
+                        <i style="font-size:14px" class="fa icon-dashbor">&#xf105;</i>
+                    </div>
+                </a>
+                <ul class="mm-collapse">
+                    <li><a href="#">پیش فرض</a></li>
+                    <li><a href="#">اسلایدر تیره</a></li>
+                    <li><a href="#">اسلایدر روشن</a></li>
+                </ul>
+            </li>
+            <li class="mm-active">
+                <a class="">
+                    <div class="nav_icon_small">
+                        <img src="../image/17.svg">
+                    </div>
+                    <div class="nav_title">
+                        <span>جدول</span>
+                        <i style="font-size:14px" class="fa icon-dashbor">&#xf105;</i>
+                    </div>
+                </a>
+                <ul class="mm-collapse">
+                    <li><a href="#">پیش فرض</a></li>
+                    <li><a href="#">اسلایدر تیره</a></li>
+                    <li><a href="#">اسلایدر روشن</a></li>
+                </ul>
+            </li>
+            <li class="mm-active">
+                <a class="">
+                    <div class="nav_icon_small">
+                        <img src="../image/18.svg">
+                    </div>
+                    <div class="nav_title">
+                        <span>کادر</span>
+                        <i style="font-size:14px" class="fa icon-dashbor">&#xf105;</i>
+                    </div>
+                </a>
+                <ul class="mm-collapse">
+                    <li><a href="#">پیش فرض</a></li>
+                    <li><a href="#">اسلایدر تیره</a></li>
+                    <li><a href="#">اسلایدر روشن</a></li>
+                </ul>
+            </li>
+            <li class="mm-active">
+                <a class="">
+                    <div class="nav_icon_small">
+                        <img src="../image/19.svg">
+                    </div>
+                    <div class="nav_title">
+                        <span>چارت</span>
+                        <i style="font-size:14px" class="fa icon-dashbor">&#xf105;</i>
+                    </div>
+                </a>
+                <ul class="mm-collapse">
+                    <li><a href="#">پیش فرض</a></li>
+                    <li><a href="#">اسلایدر تیره</a></li>
+                    <li><a href="#">اسلایدر روشن</a></li>
+                </ul>
+            </li>
+            <li class="mm-active">
+                <a class="">
+                    <div class="nav_icon_small">
+                        <img src="../image/12.svg">
+                    </div>
+                    <div class="nav_title">
+                        <span>نقشه</span>
+                        <i style="font-size:14px" class="fa icon-dashbor">&#xf105;</i>
+                    </div>
+                </a>
+                <ul class="mm-collapse">
+                    <li><a href="#">پیش فرض</a></li>
+                    <li><a href="#">اسلایدر تیره</a></li>
+                    <li><a href="#">اسلایدر روشن</a></li>
+                </ul>
+            </li>
+            <li class="mm-active">
+                <a class="">
+                    <div class="nav_icon_small">
+                        <img src="../image/17.svg">
+                    </div>
+                    <div class="nav_title">
+                        <span>جدول</span>
+                        <i style="font-size:14px" class="fa icon-dashbor">&#xf105;</i>
+                    </div>
+                </a>
+                <ul class="mm-collapse">
+                    <li><a href="#">پیش فرض</a></li>
+                    <li><a href="#">اسلایدر تیره</a></li>
+                    <li><a href="#">اسلایدر روشن</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <section class="main_content dashboard_part large_header_bg">
+        <div class="container-fluid no-gutters">
+            <div class="row">
+                <div class="col-lg-12 p-0 ">
+                    <div class="header_iner">
+                        <div class="sidebar_icon d-lg-none" onclick="funtogule()">
+                            <i style="font-size:24px" class="fa">&#xf0c9;</i>
+                        </div>
+                        <div class="serach_field-area">
+                            <div class="search_inner">
+                                <form>
+                                    <div class="search_field">
+                                        <input type="text" placeholder="search">
+                                    </div>
+                                    <button type="submit"> <img src="../image/icon_search.svg" alt=""> </button>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="header_right d-flex justify-content-between align-items-center ">
+                            <div class="header_notification_warp">
+                                <li>
+                                    <a><img src="../image/bell.svg">
+                                        <span>2</span></a>
+                                    <div class="Menu_NOtification_Wrap">
+                                        <div class="notification_Header">
+                                            <h4>اطلاع رسانی ها</h4>
+                                        </div>
+                                        <div class="Notification_body">
+                                            <div class="single_notify">
+                                                <div class="notify_thumb">
+                                                    <a href="#"><img src="../image/2.png"></a>
+                                                </div>
+                                                <div class="notify_content">
+                                                    <a>
+                                                        <h5>رضا احمدی</h5>
+                                                    </a>
+                                                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم </p>
+                                                </div>
+                                            </div>
+                                            <div class="single_notify">
+                                                <div class="notify_thumb">
+                                                    <a href="#"><img src="../image/2.png"></a>
+                                                </div>
+                                                <div class="notify_content">
+                                                    <a>
+                                                        <h5>رضا احمدی</h5>
+                                                    </a>
+                                                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم </p>
+                                                </div>
+                                            </div>
+                                            <div class="single_notify">
+                                                <div class="notify_thumb">
+                                                    <a href="#"><img src="../image/4.png"></a>
+                                                </div>
+                                                <div class="notify_content">
+                                                    <a>
+                                                        <h5>رضا احمدی</h5>
+                                                    </a>
+                                                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم </p>
+                                                </div>
+                                            </div>
+                                            <div class="single_notify">
+                                                <div class="notify_thumb">
+                                                    <a href="#"><img src="../image/2.png"></a>
+                                                </div>
+                                                <div class="notify_content">
+                                                    <a>
+                                                        <h5>رضا احمدی</h5>
+                                                    </a>
+                                                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم </p>
+                                                </div>
+                                            </div>
+                                            <div class="single_notify">
+                                                <div class="notify_thumb">
+                                                    <a href="#"><img src="../image/4.png"></a>
+                                                </div>
+                                                <div class="notify_content">
+                                                    <a>
+                                                        <h5>رضا احمدی</h5>
+                                                    </a>
+                                                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم </p>
+                                                </div>
+                                            </div>
+                                            <div class="nofity_footer">
+                                                <div class="submit_button text-center pt_20">
+                                                    <a href="#" class="btn_1"> دیدن بیشتر</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a><img src="../image/msg.svg"><span>3</span></a>
+                                </li>
+                            </div>
+                            <div class="profile_info">
+                                <img src="../image/client_img.png">
+                                <div class="profile_info_iner">
+                                    <div class="profile_author_name">
+                                        <p>مدیرسایت</p>
+                                        <p>لورم ایپسوم متن ساختگی</p>
+                                    </div>
+                                    <div class="profile_info_details">
+                                        <a href="#">پروفایل من </a>
+                                        <a href="#">تنظیمات</a>
+                                        <a href="#">لاگین </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main_content_iner overly_inner ">
+            <div class="container-fluid p-0 ">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="page_title">
+                            <div class="page_title_left ">
+                                <h3>داشبورد</h3>
+                                <ol class="breadcrumbb page_bradcam mb-0">
+                                    <li class="breadcrumb-item">
+                                        <a>صفحه اصلی</a>
+                                    </li>
+                                    <li class="breadcrumb-item">
+                                        <a>تحلیل</a>
+                                    </li>
+                                </ol>
+                            </div>
+                            <div class="page_title_right">
+                                <div class="page_date_button">
+                                    <img src="../image/calender_icon.svg" class="mr-2"> خرداد 1398/3/21
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-8 ">
+                        <div class="white_card mb_30 card_height_100">
+                            <div class="white_card_header">
+                                <div class="row align-items-center justify-content-between flex-wrap">
+                                    <div class="col-lg-4">
+                                        <div class="main-title">
+                                            <h3 class="m-0">جزئیات</h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 text-right d-flex justify-content-end">
+                                        <div class="nice-select nice_Select2 max-width-220">
+                                            <span class="current">نشان دادن ماه</span>
+                                            <i class="fa ic-br">&#xf107;</i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="white_card_body">
+                                <div class="container">
+                                    <canvas id="myChartt" width="600" height="400"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 mt-30">
+                        <div class="white_card card_height_100 mb_30 user_crm_wrapper">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="single_crm">
+                                        <div class=" crm_head d-flex align-items-center justify-content-between ">
+                                            <div class="thumb">
+                                                <img src="../image/businessman.svg">
+                                            </div>
+                                            <i style="font-size:14px" class="fa">&#xf141;</i>
+                                        </div>
+                                        <div class="crm_body">
+                                            <h4>2455</h4>
+                                            <p>ثبت نام کاربر</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="single_crm">
+                                        <div class=" crm_head crm_bg_1 d-flex align-items-center justify-content-between ">
+                                            <div class="thumb">
+                                                <img src="../image/customer.svg">
+                                            </div>
+                                            <i style="font-size:14px" class="fa">&#xf141;</i>
+                                        </div>
+                                        <div class="crm_body">
+                                            <h4>2455</h4>
+                                            <p>ثبت نام کاربر</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="single_crm">
+                                        <div class=" crm_head crm_bg_2 d-flex align-items-center justify-content-between ">
+                                            <div class="thumb">
+                                                <img src="../image/infographic.svg">
+                                            </div>
+                                            <i style="font-size:14px" class="fa">&#xf141;</i>
+                                        </div>
+                                        <div class="crm_body">
+                                            <h4>2455</h4>
+                                            <p>ثبت نام کاربر</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="single_crm">
+                                        <div class=" crm_head crm_bg_3 d-flex align-items-center justify-content-between ">
+                                            <div class="thumb">
+                                                <img src="../image/sqr.svg">
+                                            </div>
+                                            <i style="font-size:14px" class="fa">&#xf141;</i>
+                                        </div>
+                                        <div class="crm_body">
+                                            <h4>2455</h4>
+                                            <p>ثبت نام کاربر</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="crm_reports_bnner">
+                                <div class="row justify-content-end ">
+                                    <div class="col-lg-6">
+                                        <h4>گزارش های CRM ایجاد کنید</h4>
+                                        <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون</p>
+                                        <a class="fg-yello">اطلاعات بیشتر</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-xl-4">
+                        <div class="white_card card_height_100 mb_30">
+                            <div class="white_card_header">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-4">
+                                        <div class="main-title">
+                                            <h3 class="m-0">کاربران جدید</h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <div class="row justify-content-end">
+                                            <div class="col-lg-8 d-flex justify-content-end">
+                                                <div class="serach_field-area theme_bg d-flex align-items-center">
+                                                    <div class="search_inner">
+                                                        <form action="#">
+                                                            <div class="search_field">
+                                                                <input type="text" placeholder="Search">
+                                                            </div>
+                                                            <button type="submit"> <img src="../image/icon_search.svg" alt=""> </button>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="white_card_body ">
+                                <div class="single_user_pil d-flex align-items-center justify-content-between">
+                                    <div class="user_pils_thumb d-flex align-items-center">
+                                        <div class="thumb_34 mr_15 mt-0">
+                                            <img src="../image/1.png">
+                                        </div>
+                                        <span class="text_color_11">علی قربانی</span>
+                                    </div>
+                                    <div class="user_info">
+                                        مشتری
+                                    </div>
+                                    <div class="action_btns vfd d-flex">
+                                        <a class="action_btn mr_10">
+                                            <i style="font-size:14px" class="fa">&#xf044;</i>
+                                        </a>
+                                        <a class="action_btn "><i style="font-size:14px" class="fa">&#xf014;</i></a>
+                                    </div>
+                                </div>
+                                <div class="single_user_pil d-flex align-items-center justify-content-between">
+                                    <div class="user_pils_thumb d-flex align-items-center">
+                                        <div class="thumb_34 mr_15 mt-0">
+                                            <img src="../image/1.png">
+                                        </div>
+                                        <span class="text_color_11">حامد اقایی</span>
+                                    </div>
+                                    <div class="user_info">
+                                        مشتری
+                                    </div>
+                                    <div class="action_btns d-flex">
+                                        <a class="action_btn mr_10">
+                                            <i style="font-size:14px" class="fa">&#xf044;</i>
+                                        </a>
+                                        <a class="action_btn "><i style="font-size:14px" class="fa">&#xf014;</i></a>
+                                    </div>
+                                </div>
+                                <div class="single_user_pil d-flex align-items-center justify-content-between">
+                                    <div class="user_pils_thumb d-flex align-items-center">
+                                        <div class="thumb_34 mr_15 mt-0">
+                                            <img src="../image/1.png">
+                                        </div>
+                                        <span class="text_color_11">حسین وحیدی</span>
+                                    </div>
+                                    <div class="user_info">
+                                        مشتری
+                                    </div>
+                                    <div class="action_btns d-flex">
+                                        <a class="action_btn mr_10">
+                                            <i style="font-size:14px" class="fa">&#xf044;</i>
+                                        </a>
+                                        <a class="action_btn"><i style="font-size:14px" class="fa">&#xf014;</i></a>
+                                    </div>
+                                </div>
+                                <div class="single_user_pil d-flex align-items-center justify-content-between">
+                                    <div class="user_pils_thumb d-flex align-items-center">
+                                        <div class="thumb_34 mr_15 mt-0">
+                                            <img src="../image/1.png">
+                                        </div>
+                                        <span class="text_color_11">علی مرادی</span>
+                                    </div>
+                                    <div class="user_info">
+                                        ادمین
+                                    </div>
+                                    <div class="action_btns d-flex">
+                                        <a class="action_btn mr_10">
+                                            <i style="font-size:14px" class="fa">&#xf044;</i>
+                                        </a>
+                                        <a class="action_btn"><i style="font-size:14px" class="fa">&#xf014;</i></a>
+                                    </div>
+                                </div>
+                                <div class="single_user_pil d-flex align-items-center justify-content-between">
+                                    <div class="user_pils_thumb d-flex align-items-center">
+                                        <div class="thumb_34 mr_15 mt-0">
+                                            <img src="../image/1.png">
+                                        </div>
+                                        <span class="text_color_11">علی اخدی</span>
+                                    </div>
+                                    <div class="user_info">
+                                        مشتری
+                                    </div>
+                                    <div class="action_btns d-flex">
+                                        <a class="action_btn mr_10">
+                                            <i style="font-size:14px" class="fa">&#xf044;</i>
+                                        </a>
+                                        <a class="action_btn "><i style="font-size:14px" class="fa">&#xf014;</i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4">
+                        <div class="white_card card_height_100 mb_30">
+                            <div class="white_card_header">
+                                <div class="box_header m-0">
+                                    <div class="main-title">
+                                        <h3 class="m-0">فروش هفته گذشته</h3>
+                                    </div>
+                                    <div class="header_more_tool">
+                                        <div class="dropdown">
+                                            <span class="" id="dropdownMenuButton">
+                                                <i style="font-size:14px" class="fa"></i>
+                                        </span>
+                                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#"> <i class="ti-eye"></i> Action</a>
+                                                <a class="dropdown-item" href="#"> <i class="ti-trash"></i> Delete</a>
+                                                <a class="dropdown-item" href="#"> <i class="fas fa-edit"></i> Edit</a>
+                                                <a class="dropdown-item" href="#"> <i class="ti-printer"></i> Print</a>
+                                                <a class="dropdown-item" href="#"> <i class="fa fa-download"></i> Download</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container">
+                                <canvas id="myChart" width="600" height="400"></canvas>
+                            </div>
+                            <div class="white_card_body">
+                                <div class="monthly_plan_wraper">
+                                    <div class="single_plan d-flex align-items-center justify-content-between">
+                                        <div class="plan_left d-flex align-items-center">
+                                            <div class="thumb">
+                                                <img src="../image/7 (1).svg" alt="">
+                                            </div>
+                                            <div>
+                                                <h5>بیشترین فروش</h5>
+                                                <span>نویسندگانی با بهترین فروش</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="monthly_plan_wraper">
+                                    <div class="single_plan d-flex align-items-center justify-content-between">
+                                        <div class="plan_left d-flex align-items-center">
+                                            <div class="thumb">
+                                                <img src="../image/7 (1).svg" alt="">
+                                            </div>
+                                            <div>
+                                                <h5>مجموع فروش</h5>
+                                                <span>40٪ در گزارش های هفته به هفته افزایش یافته است</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="monthly_plan_wraper">
+                                    <div class="single_plan d-flex align-items-center justify-content-between">
+                                        <div class="plan_left d-flex align-items-center">
+                                            <div class="thumb">
+                                                <img src="../image/7 (1).svg" alt="">
+                                            </div>
+                                            <div>
+                                                <h5>میانگین پرفروش ترین</h5>
+                                                <span>بازاریابی ایمیلی</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-xl-4">
+                        <div class="white_card card_height_100 mb_30 overflow_hidden">
+                            <div class="white_card_header">
+                                <div class="box_header m-0">
+                                    <div class="main-title">
+                                        <h3 class="m-0">جزئیات فروش</h3>
+                                    </div>
+                                    <div class="header_more_tool">
+                                        <div class="dropdown">
+                                            <span>
+                                                <i style="font-size:14px" class="fa"></i>
+                                            </span>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="white_card_body pb-0">
+                                <div class="Sales_Details_plan">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="single_plan d-flex align-items-center justify-content-between">
+                                                <div class="plan_left d-flex align-items-center">
+                                                    <div class="thumb">
+                                                        <img src="../image/3 (1).svg" alt="">
+                                                    </div>
+                                                    <div>
+                                                        <h5>$2,034</h5>
+                                                        <span>فروش نویسنده</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="single_plan d-flex align-items-center justify-content-between">
+                                                <div class="plan_left d-flex align-items-center">
+                                                    <div class="thumb">
+                                                        <img src="../image/1.svg" alt="">
+                                                    </div>
+                                                    <div>
+                                                        <h5>$706</h5>
+                                                        <span>کمیسیون</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="single_plan d-flex align-items-center justify-content-between">
+                                                <div class="plan_left d-flex align-items-center">
+                                                    <div class="thumb">
+                                                        <img src="../image/4.svg" alt="">
+                                                    </div>
+                                                    <div>
+                                                        <h5>$49</h5>
+                                                        <span>پیشنهاد متوسط</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="single_plan d-flex align-items-center justify-content-between">
+                                                <div class="plan_left d-flex align-items-center">
+                                                    <div class="thumb">
+                                                        <img src="../image/2 (1).svg" alt="">
+                                                    </div>
+                                                    <div>
+                                                        <h5>$5.8M</h5>
+                                                        <span>فروش تمام وقت</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="container">
+                                <canvas id="myChart2" width="600" height="400"></canvas>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="white_card card_height_100 mb_20 ">
+                            <div class="white_card_header">
+                                <div class="box_header m-0">
+                                    <div class="main-title">
+                                        <h3 class="m-0">محصولات جدید</h3>
+                                    </div>
+                                    <div class="header_more_tool">
+                                        <div class="dropdown">
+                                            <span>
+                                                <i style="font-size:14px" class="fa"></i>
+                                            </span>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="white_card_body QA_section">
+                                <div class="QA_table ">
+                                    <div class="dataTables_wrapper no-footer">
+                                        <table class="table lms_table_active2 p-0 dataTable no-footer dtr-inline collapsed">
+                                            <thead>
+                                                <tr role="row">
+                                                    <th scope="col" class="sorting_asc" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 124px;" aria-sort="ascending" aria-label="Product 1: activate to sort column descending">محصول 1</th>
+                                                    <th scope="col" class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 39px;" aria-label="Price: activate to sort column ascending">قیمت</th>
+                                                    <th scope="col" class="sorting off-price" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 65px;" aria-label="Discount: activate to sort column ascending">تخفیف</th>
+                                                    <th scope="col" class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 34px;" aria-label="Sold: activate to sort column ascending">فروخته</th>
+                                                    <th scope="col" class="sorting" tabindex="0" aria-controls="DataTables_Table_0" rowspan="1" colspan="1" style="width: 0px; display: none;" aria-label="Source: activate to sort column ascending">منبع</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr role="row" class="odd">
+                                                    <td tabindex="0" class="sorting_1">
+                                                        <div class="customer d-flex align-items-center">
+                                                            <div class="thumb_34 mr_15 mt-0"><img class="img-fluid radius_50" src="../image/pro_1.png" alt=""></div>
+                                                            <span class="f_s_12 f_w_600 color_text_5">محصول 1</span>
+                                                        </div>
+
+                                                    </td>
+                                                    <td class="f_s_12 f_w_400 color_text_6">$564</td>
+                                                    <td class="f_s_12 f_w_400 color_text_7">#DE2548</td>
+                                                    <td class="f_s_12 f_w_400 color_text_6">60</td>
+                                                    <td class="f_s_12 f_w_400 text-right" style="display: none;"><a href="#" class="text_color_1">Google</a></td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td tabindex="0" class="sorting_1">
+                                                        <div class="customer d-flex align-items-center">
+                                                            <div class="thumb_34 mr_15 mt-0"><img class="img-fluid radius_50" src="../image/pro_1.png" alt=""></div>
+                                                            <span class="f_s_12 f_w_600 color_text_5">محصول 1</span>
+                                                        </div>
+
+                                                    </td>
+                                                    <td class="f_s_12 f_w_400 color_text_6">$564</td>
+                                                    <td class="f_s_12 f_w_400 color_text_7">#DE2548</td>
+                                                    <td class="f_s_12 f_w_400 color_text_6">60</td>
+                                                    <td class="f_s_12 f_w_400 text-right" style="display: none;"><a href="#" class="text_color_2">Direct</a></td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td tabindex="0" class="sorting_1">
+                                                        <div class="customer d-flex align-items-center">
+                                                            <div class="thumb_34 mr_15 mt-0"><img class="img-fluid radius_50" src="../image/pro_1.png" alt=""></div>
+                                                            <span class="f_s_12 f_w_600 color_text_5">محصول 3</span>
+                                                        </div>
+
+                                                    </td>
+                                                    <td class="f_s_12 f_w_400 color_text_6">$564</td>
+                                                    <td class="f_s_12 f_w_400 color_text_7">#DE2548</td>
+                                                    <td class="f_s_12 f_w_400 color_text_6">60</td>
+                                                    <td class="f_s_12 f_w_400 text-right" style="display: none;"><a href="#" class="text_color_1">Google</a></td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td tabindex="0" class="sorting_1">
+                                                        <div class="customer d-flex align-items-center">
+                                                            <div class="thumb_34 mr_15 mt-0"><img class="img-fluid radius_50" src="../image/pro_1.png" alt=""></div>
+                                                            <span class="f_s_12 f_w_600 color_text_5">محصول 4</span>
+                                                        </div>
+
+                                                    </td>
+                                                    <td class="f_s_12 f_w_400 color_text_6">$564</td>
+                                                    <td class="f_s_12 f_w_400 color_text_7">#DE2548</td>
+                                                    <td class="f_s_12 f_w_400 color_text_6">60</td>
+                                                    <td class="f_s_12 f_w_400 text-right" style="display: none;"><a href="#" class="text_color_1">Refferal</a></td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td tabindex="0" class="sorting_1">
+                                                        <div class="customer d-flex align-items-center">
+                                                            <div class="thumb_34 mr_15 mt-0"><img class="img-fluid radius_50" src="../image/pro_1.png" alt=""></div>
+                                                            <span class="f_s_12 f_w_600 color_text_5">محصول 5</span>
+                                                        </div>
+
+                                                    </td>
+                                                    <td class="f_s_12 f_w_400 color_text_6">$564</td>
+                                                    <td class="f_s_12 f_w_400 color_text_7">#DE2548</td>
+                                                    <td class="f_s_12 f_w_400 color_text_6">60</td>
+                                                    <td class="f_s_12 f_w_400 text-right" style="display: none;"><a href="#" class="text_color_1">20</a></td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td tabindex="0" class="sorting_1">
+                                                        <div class="customer d-flex align-items-center">
+                                                            <div class="thumb_34 mr_15 mt-0"><img class="img-fluid radius_50" src="../image/pro_1.png" alt=""></div>
+                                                            <span class="f_s_12 f_w_600 color_text_5">محصول 6</span>
+                                                        </div>
+
+                                                    </td>
+                                                    <td class="f_s_12 f_w_400 color_text_6">$564</td>
+                                                    <td class="f_s_12 f_w_400 color_text_7">#DE2548</td>
+                                                    <td class="f_s_12 f_w_400 color_text_6">60</td>
+                                                    <td class="f_s_12 f_w_400 text-right" style="display: none;"><a href="#" class="text_color_5">Direct</a></td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td tabindex="0" class="sorting_1">
+                                                        <div class="customer d-flex align-items-center">
+                                                            <div class="thumb_34 mr_15 mt-0"><img class="img-fluid radius_50" src="../image/pro_1.png" alt=""></div>
+                                                            <span class="f_s_12 f_w_600 color_text_5">محصول 6</span>
+                                                        </div>
+
+                                                    </td>
+                                                    <td class="f_s_12 f_w_400 color_text_6">$564</td>
+                                                    <td class="f_s_12 f_w_400 color_text_7">#DE2548</td>
+                                                    <td class="f_s_12 f_w_400 color_text_6">60</td>
+                                                    <td class="f_s_12 f_w_400 text-right" style="display: none;"><a href="#" class="text_color_5">Direct</a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-7">
+                        <div class="white_card card_height_100  mb_20">
+                            <div class="white_card_header">
+                                <div class="box_header m-0">
+                                    <div class="main-title">
+                                        <h3 class="m-0">بازدیدکنندگان</h3>
+                                    </div>
+                                    <div class="header_more_tool">
+                                        <div class="dropdown">
+                                            <span>
+                                                <i style="font-size:14px" class="fa"></i>
+                                            </span>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="white_card_body">
+                                <div class="mapContainer">
+                                    <a itemprop="url" class="direction-link" target="_blank" href="//maps.google.com/maps?f=d&amp;daddr=37.422230,-122.084058&amp;hl=en"> Get Directions</a>
+                                    <div id="map"></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-9 ml-3">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="single_progressbar">
+                                            <h6 class="f_s_14 f_w_400">USA</h6>
+                                            <div id="bar4" class="barfiller">
+                                                <div class="tipWrap" style="display: inline;">
+                                                    <span class="tip" style="left: 127.011px; transition: left 2.2s ease-in-out 0s;">81%</span>
+                                                </div>
+                                                <span class="fill" data-percentage="81" style="background: rgb(253, 60, 151); width: 149.486px; transition: width 2.2s ease-in-out 0s;"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="single_progressbar">
+                                            <h6>Australia</h6>
+                                            <div id="bar5" class="barfiller">
+                                                <div class="tipWrap" style="display: inline;">
+                                                    <span class="tip" style="left: 84.564px; transition: left 2.2s ease-in-out 0s;">58%</span>
+                                                </div>
+                                                <span class="fill" data-percentage="58" style="background: rgb(109, 129, 245); width: 107.039px; transition: width 2.2s ease-in-out 0s;"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="single_progressbar">
+                                            <h6>Brazil</h6>
+                                            <div id="bar6" class="barfiller">
+                                                <div class="tipWrap" style="display: inline;">
+                                                    <span class="tip" style="left: 55.036px; transition: left 2.2s ease-in-out 0s;">42%</span>
+                                                </div>
+                                                <span class="fill" data-percentage="42" style="background: rgb(13, 200, 222); width: 77.511px; transition: width 2.2s ease-in-out 0s;"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="single_progressbar">
+                                            <h6>Latvia</h6>
+                                            <div id="bar7" class="barfiller">
+                                                <div class="tipWrap" style="display: inline;">
+                                                    <span class="tip" style="left: 79.0275px; transition: left 2.2s ease-in-out 0s;">55%</span>
+                                                </div>
+                                                <span class="fill" data-percentage="55" style="background: rgb(255, 184, 34); width: 101.503px; transition: width 2.2s ease-in-out 0s;"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-4">
+                        <div class="white_card card_height_100 mb_20">
+
+                            <div class="white_card_header">
+                                <div class="box_header m-0">
+                                    <div class="main-title">
+                                        <h3 class="m-0">جزئیات</h3>
+                                    </div>
+                                    <div class="header_more_tool">
+                                        <div class="dropdown">
+                                            <span>
+                                                <i style="font-size:14px" class="fa"></i>
+                                            </span>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="white_card_body QA_section">
+                                <div class="QA_table ">
+                                    <!-- table-responsive -->
+                                    <div id="DataTables_Table_1_wrapper" class="dataTables_wrapper no-footer">
+                                        <table class="table lms_table_active2 p-0 dataTable no-footer dtr-inline collapsed" id="DataTables_Table_1" role="grid" style="width: 289px;">
+                                            <thead>
+                                                <tr role="row">
+                                                    <th scope="col" class="sorting_asc" tabindex="0" aria-controls="DataTables_Table_1" rowspan="1" colspan="1" style="width: 134px;" aria-sort="ascending" aria-label="Product Name: activate to sort column descending">نام محصول</th>
+                                                    <th scope="col" class="sorting" tabindex="0" aria-controls="DataTables_Table_1" rowspan="1" colspan="1" style="width: 94px;" aria-label="Market Price: activate to sort column ascending">قیمت</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr role="row" class="odd">
+                                                    <td tabindex="0" class="sorting_1">
+                                                        <div class="customer d-flex align-items-center">
+                                                            <div class="thumb_34 mr_15 mt-0"><img class="img-fluid radius_50" src="../image/1.png" alt=""></div>
+                                                            <span class="f_s_12 f_w_600 color_text_5">Product 1</span>
+                                                        </div>
+
+                                                    </td>
+                                                    <td class="f_s_12 f_w_400 color_text_6" style="">$564</td>
+                                                    <td class="f_s_12 f_w_400 color_text_6" style="display: none;">$650</td>
+                                                    <td class="f_s_12 f_w_400 text-center" style="display: none;"><a href="#" class="text_color_1">20</a></td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td tabindex="0" class="sorting_1">
+                                                        <div class="customer d-flex align-items-center">
+                                                            <div class="thumb_34 mr_15 mt-0"><img class="img-fluid radius_50" src="../image/1.png" alt=""></div>
+                                                            <span class="f_s_12 f_w_600 color_text_5">Product 1</span>
+                                                        </div>
+
+                                                    </td>
+                                                    <td class="f_s_12 f_w_400 color_text_6" style="">$564</td>
+                                                    <td class="f_s_12 f_w_400 color_text_6" style="display: none;">$650</td>
+                                                    <td class="f_s_12 f_w_400 text-center" style="display: none;"><a href="#" class="text_color_1">20</a></td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td tabindex="0" class="sorting_1">
+                                                        <div class="customer d-flex align-items-center">
+                                                            <div class="thumb_34 mr_15 mt-0"><img class="img-fluid radius_50" src="../image/1.png" alt=""></div>
+                                                            <span class="f_s_12 f_w_600 color_text_5">Product 1</span>
+                                                        </div>
+
+                                                    </td>
+                                                    <td class="f_s_12 f_w_400 color_text_6" style="">$564</td>
+                                                    <td class="f_s_12 f_w_400 color_text_6" style="display: none;">$650</td>
+                                                    <td class="f_s_12 f_w_400 text-center" style="display: none;"><a href="#" class="text_color_1">20</a></td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td tabindex="0" class="sorting_1">
+                                                        <div class="customer d-flex align-items-center">
+                                                            <div class="thumb_34 mr_15 mt-0"><img class="img-fluid radius_50" src="../image/1.png" alt=""></div>
+                                                            <span class="f_s_12 f_w_600 color_text_5">Product 1</span>
+                                                        </div>
+
+                                                    </td>
+                                                    <td class="f_s_12 f_w_400 color_text_6" style="">$564</td>
+                                                    <td class="f_s_12 f_w_400 color_text_6" style="display: none;">$650</td>
+                                                    <td class="f_s_12 f_w_400 text-center" style="display: none;"><a href="#" class="color_text_6">210</a></td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td tabindex="0" class="sorting_1">
+                                                        <div class="customer d-flex align-items-center">
+                                                            <div class="thumb_34 mr_15 mt-0"><img class="img-fluid radius_50" src="../image/1.png" alt=""></div>
+                                                            <span class="f_s_12 f_w_600 color_text_5">Product 1</span>
+                                                        </div>
+
+                                                    </td>
+                                                    <td class="f_s_12 f_w_400 color_text_6">$564</td>
+                                                    <td class="f_s_12 f_w_400 color_text_6" style="display: none;">$650</td>
+                                                    <td class="f_s_12 f_w_400 text-center" style="display: none;"><a href="#" class="text_color_1">210</a></td>
+                                                </tr>
+                                                <tr role="row" class="even">
+                                                    <td tabindex="0" class="sorting_1">
+                                                        <div class="customer d-flex align-items-center">
+                                                            <div class="thumb_34 mr_15 mt-0"><img class="img-fluid radius_50" src="../image/1.png" alt=""></div>
+                                                            <span class="f_s_12 f_w_600 color_text_5">Product 1</span>
+                                                        </div>
+
+                                                    </td>
+                                                    <td class="f_s_12 f_w_400 color_text_6" style="">$564</td>
+                                                    <td class="f_s_12 f_w_400 color_text_6" style="display: none;">$650</td>
+                                                    <td class="f_s_12 f_w_400 text-center" style="display: none;"><a href="#" class="text_color_5">200</a></td>
+                                                </tr>
+                                                <tr role="row" class="odd">
+                                                    <td tabindex="0" class="sorting_1">
+                                                        <div class="customer d-flex align-items-center">
+                                                            <div class="thumb_34 mr_15 mt-0"><img class="img-fluid radius_50" src="../image/1.png" alt=""></div>
+                                                            <span class="f_s_12 f_w_600 color_text_5">Product 1</span>
+                                                        </div>
+
+                                                    </td>
+                                                    <td class="f_s_12 f_w_400 color_text_6" style="">$564</td>
+                                                    <td class="f_s_12 f_w_400 color_text_6" style="display: none;">$650</td>
+                                                    <td class="f_s_12 f_w_400 text-center" style="display: none;"><a href="#" class="text_color_5">200</a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-xl-4">
+                        <div class="white_card card_height_100 mb_30">
+                            <div class="white_card_header">
+                                <div class="box_header m-0">
+                                    <div class="main-title">
+                                        <h3 class="m-0">فعالیت های اخیر</h3>
+                                    </div>
+                                    <div class="header_more_tool">
+                                        <div class="dropdown">
+                                            <span>
+                                                <i style="font-size:14px" class="fa"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="white_card_body">
+                                <div class="Activity_timeline">
+                                    <ul>
+                                        <li>
+                                            <div class="activity_bell"></div>
+                                            <div class="timeLine_inner d-flex align-items-center">
+                                                <div class="activity_wrap">
+                                                    <h6>5 دقیق قبل</h6>
+                                                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم ازاستففس </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="activity_bell "></div>
+                                            <div class="timeLine_inner d-flex align-items-center">
+                                                <div class="activity_wrap">
+                                                    <h6>10 دقیق قبل</h6>
+                                                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم استففس </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="activity_bell bell_lite"></div>
+                                            <div class="timeLine_inner d-flex align-items-center">
+                                                <div class="activity_wrap">
+                                                    <h6>دو روز قبل</h6>
+                                                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم استففس </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="activity_bell bell_lite"></div>
+                                            <div class="timeLine_inner d-flex align-items-center">
+                                                <div class="activity_wrap">
+                                                    <h6>دو هفته قبل</h6>
+                                                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم استففس </p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4">
+                        <div class="white_card card_height_100 mb_30">
+                            <div class="white_card_header">
+                                <div class="box_header m-0">
+                                    <div class="main-title">
+                                        <h3 class="m-0">درخواست اعضا برای پست الکترونیکی</h3>
+                                    </div>
+                                    <div class="header_more_tool">
+                                        <div class="dropdown">
+                                            <span>
+                                                <i style="font-size:14px" class="fa"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="white_card_body">
+                                <div class="thumb mb_30">
+                                    <img src="../image/table.svg" alt="" class="img-fluid">
+                                </div>
+                                <div class="common_form">
+                                    <form action="#">
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <div class="common_input mb_15">
+                                                    <input type="text" placeholder="نام">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="common_input mb_15">
+                                                    <input type="text" placeholder="ناام خانوادگی">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <div class="common_input mb_15">
+                                                    <input type="text" placeholder="ایمیل">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="common_input mb_15">
+                                                    <input type="text" placeholder="لاگین">
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="create_report_btn mt_30">
+                                                    <a href="#" class="btn_1 radius_btn d-block text-center">لینک دعوت را ارسال کنید</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-12">
+                        <div class="white_card card_height_100 mb_30">
+                            <div class="white_card_header">
+                                <div class="row align-items-center">
+                                    <div class="col-lg-4">
+                                        <div class="main-title">
+                                            <h3 class="m-0">جزئیات</h3>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <div class="row justify-content-end">
+                                            <div class="col-lg-8 d-flex justify-content-end">
+                                                <div class="serach_field-area theme_bg d-flex align-items-center">
+                                                    <div class="search_inner">
+                                                        <form action="#">
+                                                            <div class="search_field">
+                                                                <input type="text" placeholder="Search">
+                                                            </div>
+                                                            <button type="submit"> <img src="../image/icon_search.svg" alt=""> </button>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-2">
+
+                                                <div class="nice-select nice_Select2 wide" tabindex="0"><span class="current">Show </span>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="white_card_body ">
+                                <div class="row min_height_oveflow">
+                                    <div class="col-lg-4 mb_30">
+                                        <div class="single_user_pil d-flex align-items-center justify-content-between">
+                                            <div class="user_pils_thumb d-flex align-items-center">
+                                                <div class="thumb_34 mr_15 mt-0">
+                                                    <img src="../image/1.png">
+                                                </div>
+                                                <span class="text_color_11">علی احدی</span>
+                                            </div>
+                                            <div class="user_info">
+                                                مشتری
+                                            </div>
+                                            <div class="action_btns d-flex">
+                                                <a class="action_btn ">
+                                                    <i style="font-size:14px" class="fa"></i>
+                                                </a>
+                                                <a class="action_btn mr_100"><i style="font-size:14px" class="fa"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="single_user_pil d-flex align-items-center justify-content-between">
+                                            <div class="user_pils_thumb d-flex align-items-center">
+                                                <div class="thumb_34 mr_15 mt-0">
+                                                    <img src="../image/1.png">
+                                                </div>
+                                                <span class="text_color_11">علی احدی</span>
+                                            </div>
+                                            <div class="user_info">
+                                                مشتری
+                                            </div>
+                                            <div class="action_btns d-flex">
+                                                <a class="action_btn ">
+                                                    <i style="font-size:14px" class="fa"></i>
+                                                </a>
+                                                <a class="action_btn mr_100"><i style="font-size:14px" class="fa"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="single_user_pil d-flex align-items-center justify-content-between">
+                                            <div class="user_pils_thumb d-flex align-items-center">
+                                                <div class="thumb_34 mr_15 mt-0">
+                                                    <img src="../image/1.png">
+                                                </div>
+                                                <span class="text_color_11">علی رضای</span>
+                                            </div>
+                                            <div class="user_info">
+                                                مشتری
+                                            </div>
+                                            <div class="action_btns d-flex">
+                                                <a class="action_btn ">
+                                                    <i style="font-size:14px" class="fa"></i>
+                                                </a>
+                                                <a class="action_btn mr_100"><i style="font-size:14px" class="fa"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="single_user_pil d-flex align-items-center justify-content-between">
+                                            <div class="user_pils_thumb d-flex align-items-center">
+                                                <div class="thumb_34 mr_15 mt-0">
+                                                    <img src="../image/1.png">
+                                                </div>
+                                                <span class="text_color_11">علی احدی</span>
+                                            </div>
+                                            <div class="user_info">
+                                                مشتری
+                                            </div>
+                                            <div class="action_btns d-flex">
+                                                <a class="action_btn ">
+                                                    <i style="font-size:14px" class="fa"></i>
+                                                </a>
+                                                <a class="action_btn mr_100"><i style="font-size:14px" class="fa"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="single_user_pil d-flex align-items-center justify-content-between">
+                                            <div class="user_pils_thumb d-flex align-items-center">
+                                                <div class="thumb_34 mr_15 mt-0">
+                                                    <img src="../image/1.png">
+                                                </div>
+                                                <span class="text_color_11">علی مرادی</span>
+                                            </div>
+                                            <div class="user_info">
+                                                ادمین
+                                            </div>
+                                            <div class="action_btns d-flex">
+                                                <a class="action_btn ">
+                                                    <i style="font-size:14px" class="fa"></i>
+                                                </a>
+                                                <a class="action_btn mr_100"><i style="font-size:14px" class="fa"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 mb_30">
+                                        <div class="single_user_pil d-flex align-items-center justify-content-between">
+                                            <div class="user_pils_thumb d-flex align-items-center">
+                                                <div class="thumb_34 mr_15 mt-0">
+                                                    <img src="../image/1.png">
+                                                </div>
+                                                <span class="text_color_11">علی مرادی</span>
+                                            </div>
+                                            <div class="user_info">
+                                                ادمین
+                                            </div>
+                                            <div class="action_btns d-flex">
+                                                <a class="action_btn ">
+                                                    <i style="font-size:14px" class="fa"></i>
+                                                </a>
+                                                <a class="action_btn mr_100"><i style="font-size:14px" class="fa"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="single_user_pil d-flex align-items-center justify-content-between">
+                                            <div class="user_pils_thumb d-flex align-items-center">
+                                                <div class="thumb_34 mr_15 mt-0">
+                                                    <img src="../image/1.png">
+                                                </div>
+                                                <span class="text_color_11">علی احدی</span>
+                                            </div>
+                                            <div class="user_info">
+                                                مشتری
+                                            </div>
+                                            <div class="action_btns d-flex">
+                                                <a class="action_btn">
+                                                    <i style="font-size:14px" class="fa"></i>
+                                                </a>
+                                                <a class="action_btn mr_100"><i style="font-size:14px" class="fa"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="single_user_pil d-flex align-items-center justify-content-between">
+                                            <div class="user_pils_thumb d-flex align-items-center">
+                                                <div class="thumb_34 mr_15 mt-0">
+                                                    <img src="../image/1.png">
+                                                </div>
+                                                <span class="text_color_11">علی احدی</span>
+                                            </div>
+                                            <div class="user_info">
+                                                مشتری
+                                            </div>
+                                            <div class="action_btns d-flex">
+                                                <a class="action_btn">
+                                                    <i style="font-size:14px" class="fa"></i>
+                                                </a>
+                                                <a class="action_btn mr_100"><i style="font-size:14px" class="fa"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="single_user_pil d-flex align-items-center justify-content-between">
+                                            <div class="user_pils_thumb d-flex align-items-center">
+                                                <div class="thumb_34 mr_15 mt-0">
+                                                    <img src="../image/1.png">
+                                                </div>
+                                                <span class="text_color_11">علی احدی</span>
+                                            </div>
+                                            <div class="user_info">
+                                                مشتری
+                                            </div>
+                                            <div class="action_btns d-flex">
+                                                <a class="action_btn ">
+                                                    <i style="font-size:14px" class="fa"></i>
+                                                </a>
+                                                <a class="action_btn mr_100"><i style="font-size:14px" class="fa"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="single_user_pil d-flex align-items-center justify-content-between">
+                                            <div class="user_pils_thumb d-flex align-items-center">
+                                                <div class="thumb_34 mr_15 mt-0">
+                                                    <img src="../image/1.png">
+                                                </div>
+                                                <span class="text_color_11">علی احدی</span>
+                                            </div>
+                                            <div class="user_info">
+                                                مشتری
+                                            </div>
+                                            <div class="action_btns d-flex">
+                                                <a class="action_btn">
+                                                    <i style="font-size:14px" class="fa"></i>
+                                                </a>
+                                                <a class="action_btn mr_100"><i style="font-size:14px" class="fa"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 mb_30">
+                                        <div class="single_user_pil d-flex align-items-center justify-content-between">
+                                            <div class="user_pils_thumb d-flex align-items-center">
+                                                <div class="thumb_34 mr_15 mt-0">
+                                                    <img src="../image/1.png">
+                                                </div>
+                                                <span class="text_color_11">علی احدی</span>
+                                            </div>
+                                            <div class="user_info">
+                                                مشتری
+                                            </div>
+                                            <div class="action_btns d-flex">
+                                                <a class="action_btn">
+                                                    <i style="font-size:14px" class="fa"></i>
+                                                </a>
+                                                <a class="action_btn mr_100"><i style="font-size:14px" class="fa"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="single_user_pil d-flex align-items-center justify-content-between">
+                                            <div class="user_pils_thumb d-flex align-items-center">
+                                                <div class="thumb_34 mr_15 mt-0">
+                                                    <img src="../image/1.png">
+                                                </div>
+                                                <span class="text_color_11">علی احدی</span>
+                                            </div>
+                                            <div class="user_info">
+                                                مشتری
+                                            </div>
+                                            <div class="action_btns d-flex">
+                                                <a class="action_btn">
+                                                    <i style="font-size:14px" class="fa"></i>
+                                                </a>
+                                                <a class="action_btn mr_100"><i style="font-size:14px" class="fa"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="single_user_pil d-flex align-items-center justify-content-between">
+                                            <div class="user_pils_thumb d-flex align-items-center">
+                                                <div class="thumb_34 mr_15 mt-0">
+                                                    <img src="../image/1.png">
+                                                </div>
+                                                <span class="text_color_11">علی احدی</span>
+                                            </div>
+                                            <div class="user_info">
+                                                مشتری
+                                            </div>
+                                            <div class="action_btns d-flex">
+                                                <a class="action_btn ">
+                                                    <i style="font-size:14px" class="fa"></i>
+                                                </a>
+                                                <a class="action_btn mr_100"><i style="font-size:14px" class="fa"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="single_user_pil d-flex align-items-center justify-content-between">
+                                            <div class="user_pils_thumb d-flex align-items-center">
+                                                <div class="thumb_34 mr_15 mt-0">
+                                                    <img src="../image/1.png">
+                                                </div>
+                                                <span class="text_color_11">علی احدی</span>
+                                            </div>
+                                            <div class="user_info">
+                                                مشتری
+                                            </div>
+                                            <div class="action_btns d-flex">
+                                                <a class="action_btn ">
+                                                    <i style="font-size:14px" class="fa"></i>
+                                                </a>
+                                                <a class="action_btn mr_100"><i style="font-size:14px" class="fa"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="single_user_pil d-flex align-items-center justify-content-between">
+                                            <div class="user_pils_thumb d-flex align-items-center">
+                                                <div class="thumb_34 mr_15 mt-0">
+                                                    <img src="../image/1.png">
+                                                </div>
+                                                <span class="text_color_11">علی احدی</span>
+                                            </div>
+                                            <div class="user_info">
+                                                مشتری
+                                            </div>
+                                            <div class="action_btns d-flex">
+                                                <a class="action_btn">
+                                                    <i style="font-size:14px" class="fa"></i>
+                                                </a>
+                                                <a class="action_btn mr_100"><i style="font-size:14px" class="fa"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+        </div>
+        <div class="footer_part">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="footer_iner text-center">
+                            <p>قانون حق کپی رایت</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script src="../Chart.bundle.min.js"></script>
+    <script src="../jquery/jquery.min.js "></script>
+    <script src="../bootstrap-4.5.3-dist/bootstrap-4.5.3-dist/js/bootstrap.min.js "></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script src="../chartjs-plugin-datalabels@1.js"></script>
+    <script src="../nemodar.js"></script>
+</body>
+
+</html>
